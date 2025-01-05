@@ -1,7 +1,14 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors'); // CORS paketini dahil et
 const fetch = require('node-fetch');
 const app = express();
+
+// CORS yapılandırması
+app.use(cors({
+  origin: "https://z-eso0111.github.io", // Frontend URL'si
+  methods: ["GET", "POST"], // İzin verilen HTTP metotları
+}));
 
 app.use(express.json());
 
