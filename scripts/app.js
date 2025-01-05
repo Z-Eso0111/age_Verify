@@ -1,4 +1,4 @@
-const backendUrl = "http://localhost:3000/verify";
+const backendUrl = "https://age-verify.onrender.com";
 
 (async () => {
   const params = new URLSearchParams(window.location.search);
